@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <head>
+    <script src="https://kit.fontawesome.com/0ab8a660b3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://use.fontawesome.com/34c311aa04.js"></script>
 </head>
 <body>
-
-    <div class="container">
-
+    <div class="main">
         <div class="menu">
-            <div class="menu_logo">
-                <div class="menu_logo_icon">
-                    <i class="fa fa-users" aria-hidden="true"></i> 
-                </div>
-                <div class="menu_logo_text">
-                    Acl
-                </div>
+            <div class="menu__logo">
+                <span class="fa fa-users"></span>
+                <span >Acl</span>
             </div>
-            <div class="menu_items">
+            <div class="menu__items">
                 <ul>
                     <li>Users</li>
                     <li>Groups</li>
@@ -24,14 +18,102 @@
             </div>
         </div>
         
-        <div class="main">
-            <div class="main_logo">
+        <div class="workspace">
+            <div class="workspace__logo">
                 Access Control List
             </div>
-            <div class="main_body">
+            <div class="workspace__body">
+                <div class="sort">
+                    <div class="sort__name sort_active">
+                        Имя
+                    </div>
+                    <div class="sort__email">
+                        Почта
+                    </div>
+                    <div class="sort__group">
+                        Группа
+                    </div>
+                    <div class="sort__available-methods">
+                        Доступные методы
+                    </div>
+                </div>
                 <ul>
-                    <li>Users1</li>
-                    <li>Users2</li>
+                    <li class="user">
+                        <div class="user__name">
+                            User1
+                        </div>
+                        <div class="user__email">
+                            user@mail.ru
+                        </div>
+                        <div class="user__group">
+                            Group1
+                        </div>
+                        <div class="user__methods">
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </li>
+                    <!--li.user*10>div.user__name{User$$}+div.user__email{user$$@mail.ru}+div.user__group{Group$}+div.user__methods>i.fas.fa-edit+i.fas.fa-trash-alt-->
+                    <li class="user">
+                        <div class="user__name">User01</div>
+                        <div class="user__email">user01@mail.ru</div>
+                        <div class="user__group">Group1</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User02</div>
+                        <div class="user__email">user02@mail.ru</div>
+                        <div class="user__group">Group2</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User03</div>
+                        <div class="user__email">user03@mail.ru</div>
+                        <div class="user__group">Group3</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User04</div>
+                        <div class="user__email">user04@mail.ru</div>
+                        <div class="user__group">Group4</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User05</div>
+                        <div class="user__email">user05@mail.ru</div>
+                        <div class="user__group">Group5</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User06</div>
+                        <div class="user__email">user06@mail.ru</div>
+                        <div class="user__group">Group6</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User07</div>
+                        <div class="user__email">user07@mail.ru</div>
+                        <div class="user__group">Group7</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User08</div>
+                        <div class="user__email">user08@mail.ru</div>
+                        <div class="user__group">Group8</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User09</div>
+                        <div class="user__email">user09@mail.ru</div>
+                        <div class="user__group">Group9</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
+                    <li class="user">
+                        <div class="user__name">User10</div>
+                        <div class="user__email">user10@mail.ru</div>
+                        <div class="user__group">Group10</div>
+                        <div class="user__methods"><i class="fas fa-edit"></i><i class="fas fa-trash-alt"></i></div>
+                    </li>
                 </ul>
             </div>
         </div>

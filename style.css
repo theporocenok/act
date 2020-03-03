@@ -1,17 +1,22 @@
-body{
-    
+* {
     margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
 }
 
 li{
     list-style-type: none;
 }
 
-.container{
+.main{
     background-color: #C4C4C4;
-    min-height: 100vh;
-    width: 100%;
     display: flex;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
 }
 
 .menu{
@@ -20,38 +25,92 @@ li{
     border: 1px solid black;
 }
 
-.menu_logo{
+.menu__logo{
     display: flex;
     margin-bottom: 20px;
 }
 
-.menu_logo_icon{
-    margin: 0 12px 0 12px;
+.menu__logo span{
+    margin: 5px;
 }
 
-.menu_items{
+.menu__items{
     margin-left: 42px;
 }
 
-.menu_items ul{
-    padding: 0;
-    margin: 0;
-}
-
-.menu_items li{
+.menu__items li{
     margin-bottom: 10px;
 }
 
-.main{
-    width: calc(85% - 12px);
-}
-
-.main_logo{ 
-    padding: 20px 0 20px 10px;
-}
-
-.main_body{
+.workspace{
     width: 100%;
+    
+}
+
+.workspace__logo{ 
+    padding: 20px 0 20px 10px;
+    border: 1px solid black;
+    
+    border-width: 1px 1px 1px 0px;
+}
+
+.workspace__body{
     border: 5px solid white;
     overflow:hidden;
+}
+
+.workspace__body li{
+    border: 1px solid black;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15pt;
+    display: flex;
+    cursor: default;
+}
+
+.sort{
+    display: flex;
+    flex-direction: row;
+}
+
+.sort_active{
+    outline: 2px solid black;
+    outline-offset: -2px;
+}
+
+.sort div{
+    width: 100%;
+    flex-grow: 1;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+.sort div:not(:first-child){
+    border-left: 0;
+}
+
+.user{
+    justify-content: space-between;
+}
+
+.user div{
+    width: 100%;
+    /*flex-grow: 1;*/
+    background-color: #DCDCDC;
+    padding: 0 10px 0 10px;
+}
+
+.user div:nth-child(2n) {
+    background-color: #f0f0f0;
+}
+
+.user__methods{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.user__methods i{
+    cursor: pointer;
+    align-self: center;
 }
